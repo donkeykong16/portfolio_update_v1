@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/background.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -77,16 +77,15 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(95, 32, 112, 0.75);
+  color: white;
 }
 .card {
   margin: 30px;
@@ -99,7 +98,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #5F2070;
 }
 
 ul.skills {
@@ -110,16 +109,23 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #DB7116;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
+.skills li:hover {
+  background-color: #5F2070;
+}
+
+/*
+
 .skills li:nth-child(odd) {
   background: #0399ff;
 }
 
+*/
 footer {
   width: 100%;
   min-height: 30px;
@@ -150,29 +156,82 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
+
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(images/twitter.png);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/linkedin.png);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(images/github.png);
+}
+
+a.lawfirm {
+  background-image: url(images/mmllp.png);
+}
+
+a.echo {
+  background-image: url(images/echo.png);
 }
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
 
+h1 {
+  color: white;
+  pointer-events: none;
+  border: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.typwriter h1 {
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  -webkit-animation:
+    typing 3.5s steps(40, end),
+    blinking-cursor .5s steps(50, end) infinite;
+}
+
+
+.typewriter {
+  display: inline-flex;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+    to {
+      width: 100%;
+    }
+}
+
+@-webkit-keyframes blinking-cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +263,3 @@ a.social:hover {
   }
 
 }
-
