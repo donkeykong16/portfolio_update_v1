@@ -71,7 +71,7 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .25s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
@@ -202,7 +202,6 @@ h1 {
     blinking-cursor .5s steps(50, end) infinite;
 }
 
-
 .typewriter {
   display: inline-flex;
 }
@@ -225,6 +224,10 @@ h1 {
   }
 }
 
+.card::before {
+  background-image: url(images/spirit-animal.jpg);
+  opacity: 0.5;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
