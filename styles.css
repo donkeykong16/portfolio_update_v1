@@ -224,10 +224,6 @@ h1 {
   }
 }
 
-.card::before {
-  background-image: url(images/spirit-animal.jpg);
-  opacity: 0.5;
-}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
